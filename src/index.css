@@ -1,3 +1,112 @@
+/* ===================================================================
+ * fonts.scss
+ *
+ * ------------------------------------------------------------------- */
+
+/*
+ * domine
+================================================================================ */
+@font-face {
+  font-family: 'domine-regular';
+  src: local('domine-regular'),
+    url('../src/assets/fonts/domine/domine-regular-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/domine/domine-regular-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'domine-bold';
+  src: local('domine-bold'),
+    url('../src/assets/fonts/domine/domine-bold-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/domine/domine-bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * metropolis
+================================================================================ */
+@font-face {
+  font-family: 'metropolis-bold';
+  src: local('metropolis-bold'),
+    url('../src/assets/fonts/metropolis/metropolis-bold-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-bold-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-semibold';
+  src: local('metropolis-semibold'),
+    url('../src/assets/fonts/metropolis/metropolis-semibold-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-semibold-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-medium';
+  src: local('metropolis-medium'),
+    url('../src/assets/fonts/metropolis/metropolis-medium-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-medium-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-regular';
+  src: local('metropolis-regular'),
+    url('../src/assets/fonts/metropolis/metropolis-regular-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-regular-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-light';
+  src: local('metropolis-light'),
+    url('../src/assets/fonts/metropolis/metropolis-light-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-light-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-extralight';
+  src: local('metropolis-extralight'),
+    url('../src/assets/fonts/metropolis/metropolis-extralight-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-extralight-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'metropolis-italic';
+  src: local('metropolis-italic'),
+    url('../src/assets/fonts/metropolis/metropolis-regularitalic-webfont.woff2')
+      format('woff2'),
+    url('../src/assets/fonts/metropolis/metropolis-regularitalic-webfont.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
