@@ -1,5 +1,5 @@
 export const Colors = {
-  primary: '#727BC0',
+  primary: '#ec008c',
   secondary: '#484B5D',
   warning: '#f5a623',
   success: '#64AD44',
@@ -8,8 +8,8 @@ export const Colors = {
   text: '#666B88',
 
   darkPrimary: '#3d444b',
-  white: '#DAE0F6',
-  whiteLight: '#ededed',
+  white: '#FFFFFF',
+  whiteLight: 'rgba(255, 255, 255, 0.4)',
 
   buttonText: '#464763',
 

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Colors } from '../../lib/theme/Colors';
 
 export const HeaderContainer = styled.div`
   padding: 0.8rem;
-  position: fixed;
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,9 +23,7 @@ export const MenuTab = styled.div`
     height: 42px;
     width: 42px;
     line-height: 42px;
-    position: fixed;
-    left: 50px;
-    top: 30px;
+    position: absolute;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -99,4 +98,14 @@ export const MenuTab = styled.div`
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+`;
+
+export const Brand = styled.div`
+  color: ${Colors.white};
+  position: relative;
+  z-index: 9999;
+  right: 3rem;
+  top: 3em;
+  font-size: 1rem;
+  font-family: 'metropolis-medium', sans-serif;
 `;

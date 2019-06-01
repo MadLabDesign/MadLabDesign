@@ -27,6 +27,20 @@ export const MenuContainer = styled.div`
   }
   ul li {
     animation-delay: 0.3s;
+    counter-increment: li;
+    &:before {
+      position: relative;
+      top: -2rem;
+      left: -10px;
+      font-family: Gilroy, Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      content: '0' counter(li);
+      transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      color: ${Colors.whiteLight};
+      font-size: 0.7142857143rem;
+      letter-spacing: 0.36em;
+    }
   }
   ul li a {
     padding-top: 13px;
@@ -35,14 +49,14 @@ export const MenuContainer = styled.div`
     font-weight: 100;
     font-style: normal;
     display: inline-block;
-    transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    color: rgba(160, 168, 220, 0.8);
+    transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 0.4);
+    color: ${Colors.whiteLight};
     font-size: 4.2857142857rem;
     letter-spacing: 0.02em;
     line-height: 0.92;
     text-decoration: none;
     &:hover {
-      color: ${Colors.white};
+      color: ${Colors.primary};
     }
   }
 `;

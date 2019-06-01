@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { MenuContainer } from './Menu.style';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
 
 export interface IMenuProps {}
 
@@ -15,16 +16,17 @@ export default class Menu extends React.Component<IMenuProps, any> {
                 <Link to={'/'}>About</Link>
               </li>
               <li>
-                <Link to={'/'}>About</Link>
+                <Link to={'/'}>Work</Link>
               </li>
               <li>
-                <Link to={'/'}>About</Link>
+                <Link to={'/'}>Freebees</Link>
               </li>
               <li>
-                <Link to={'/'}>About</Link>
+                <Link to={'/'}>Contact</Link>
               </li>
             </ul>
           </>
+          <Footer />
         </MenuContainer>
       </>
     );
