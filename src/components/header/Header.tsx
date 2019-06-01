@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { HeaderContainer, MenuTab } from './Header.style';
+import { HeaderContainer, MenuTab, Brand } from './Header.style';
 
 export interface IHeaderProps {
   addClass?: JSX.Element | boolean;
@@ -38,6 +38,7 @@ export default class Header extends React.Component<IHeaderProps, any> {
             )}
           </div>
         </MenuTab>
+        <Brand>Madlab</Brand>
       </HeaderContainer>
     );
   }

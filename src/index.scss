@@ -108,6 +108,10 @@
 /*# sourceMappingURL=fonts.css.map */
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400&display=swap');
+
+html {
+  background-color: #050505;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -115,9 +119,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./assets/images/1.jpg);
   background-size: cover;
   background-position: center center;
+  background-color: #050505;
 }
 
 code {
@@ -215,4 +219,26 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.home-content__line {
+  display: block;
+  width: 1px;
+  height: 12rem;
+  background-color: #ec008c;
+  position: absolute;
+  right: 84px;
+  bottom: 0;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/images/1.jpg);
+  background-position: 50% 0%;
+  background-size: cover;
+  z-index: 0;
 }
