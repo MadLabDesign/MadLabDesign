@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.scss';
 
-class App extends React.Component {
+class Home extends React.Component {
   public render() {
     return (
       <div className="App">
@@ -11,4 +11,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
