@@ -15,10 +15,10 @@ export const MenuContainer = styled.div`
   font-size: calc(10px + 2vmin);
   color: white;
   &.page-enter {
-    animation: ${Slider.slideInLeft} 0.2s forwards;
+    animation: ${Slider.slideInLeft} 1s forwards;
   }
   &.page-exit {
-    animation: ${Slider.slideOutLeft} 0.2s forwards;
+    animation: ${Slider.slideOutLeft} 1s forwards;
   }
 
   ul {

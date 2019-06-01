@@ -16,10 +16,10 @@ export const HomePage = styled.div`
   background-color: #000000;
 
   &.page-enter {
-    animation: ${slideInLeft} 0.2s forwards;
+    animation: ${slideInLeft} 1s forwards;
   }
   &.page-exit {
-    animation: ${slideOutLeft} 0.2s forwards;
+    animation: ${slideOutLeft} 1s forwards;
   }
 
   /* .content {
@@ -79,15 +79,5 @@ export const HomePage = styled.div`
       left: 0;
       top: 50%;
     }
-  }
-
-  .home-content__line {
-    display: block;
-    width: 1px;
-    height: 12rem;
-    background-color: #ec008c;
-    position: absolute;
-    right: 84px;
-    bottom: 0;
   }
 `;

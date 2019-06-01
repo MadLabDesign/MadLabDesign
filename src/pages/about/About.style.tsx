@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { slideInLeft, slideOutLeft } from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 
-export const IntroSection = styled.div`
+export const AboutContainer = styled.div`
   min-height: 100vh;
   height: 100%;
   background-color: ${Colors.black};

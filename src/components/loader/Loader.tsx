@@ -19,7 +19,7 @@ const ScreenWrapper = styled.div<ILoadingProps>`
   width: 100vw;
   height: 100vh;
   text-align: center;
-  // background: ${props => props.bgColor || '#ffffff'};
+
   opacity: ${props => (props.loading ? 1 : 0)};
   visibility: ${props => (props.loading ? 'visible' : 'hidden')};
   transition: opacity 0.4s, visibility -0.3s linear 0.5s;

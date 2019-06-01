@@ -13,16 +13,16 @@ export default class Menu extends React.Component<IMenuProps, any> {
           <>
             <ul>
               <li>
-                <Link to={'/'}>About</Link>
+                <Link to={'/about'}>About</Link>
               </li>
               <li>
-                <Link to={'/'}>Work</Link>
+                <Link to={'/work'}>Work</Link>
               </li>
               <li>
-                <Link to={'/'}>Freebees</Link>
+                <Link to={'/freebies'}>Freebees</Link>
               </li>
               <li>
-                <Link to={'/'}>Contact</Link>
+                <Link to={'/contact'}>Contact</Link>
               </li>
             </ul>
           </>

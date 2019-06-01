@@ -13,6 +13,10 @@ import styled from 'styled-components';
 import * as serviceWorker from './serviceWorker';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import Freebies from './pages/freebies/Freebies';
+import Work from './pages/work/Work';
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -42,13 +46,17 @@ class App extends React.Component {
                   <TransitionGroup component={null}>
                     <Header />
                     <CSSTransition
-                      timeout={300}
+                      timeout={3000}
                       classNames="page"
                       key={location.key}
                     >
                       <Switch location={location}>
                         <Route exact path="/" component={Home} />
                         <Route path="/menu" component={Menu} />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/freebies" component={Freebies} />
+                        <Route path="/work" component={Work} />
                       </Switch>
                     </CSSTransition>
                   </TransitionGroup>
