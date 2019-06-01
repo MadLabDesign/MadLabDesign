@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { slideInLeft, slideOutLeft } from '../../components/slider/Slider';
 
 export interface ILoadingProps {
   children?: JSX.Element | string;
@@ -18,10 +19,16 @@ const ScreenWrapper = styled.div<ILoadingProps>`
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background: ${props => props.bgColor || '#ffffff'};
+  // background: ${props => props.bgColor || '#ffffff'};
   opacity: ${props => (props.loading ? 1 : 0)};
   visibility: ${props => (props.loading ? 'visible' : 'hidden')};
   transition: opacity 0.4s, visibility -0.3s linear 0.5s;
+  &.page-enter {
+    animation: ${slideInLeft} 0.2s forwards;
+  }
+  &.page-exit {
+    animation: ${slideOutLeft} 0.2s forwards;
+  }
 `;
 
 const LoadingComponents = styled.div<ILoadingProps>`
