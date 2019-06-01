@@ -17,9 +17,11 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-loading-screen": "^0.0.17",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "style-component": "^0.0.1",
+    "styled-components": "^4.2.1",
     "typescript": "^3.5.1"
   },
   "scripts": {
@@ -49,6 +51,7 @@
     "mobx-react-devtools": "^6.1.1",
     "prettier": "^1.17.1",
     "tslint": "^5.17.0",
-    "tslint-react": "^4.0.0"
+    "tslint-react": "^4.0.0",
+    "typescript-plugin-styled-components": "^1.4.3"
   }
 }
