@@ -22,22 +22,21 @@ export default class Header extends React.Component<IHeaderProps, any> {
     return (
       <HeaderContainer>
         <MenuTab>
-          <Link to="/menu">
-            <div
-              className={boxClass.join(' ')}
-              onClick={this.toggle.bind(this)}
-            >
-              {this.state.addClass ? (
+          <div className={boxClass.join(' ')} onClick={this.toggle.bind(this)}>
+            {this.state.addClass ? (
+              <Link to="/">
                 <div className="info-is-visible info-toggle">
                   <span className="info-menu-icon" />
                 </div>
-              ) : (
+              </Link>
+            ) : (
+              <Link to="/menu">
                 <div className="info-toggle ">
                   <span className="info-menu-icon" />
                 </div>
-              )}
-            </div>
-          </Link>
+              </Link>
+            )}
+          </div>
         </MenuTab>
       </HeaderContainer>
     );

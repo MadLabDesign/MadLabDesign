@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import * as Slider from '../../components/slider/Slider';
+import { Colors } from '../../lib/theme/Colors';
 
 export const MenuContainer = styled.div`
   background-image: url(../../assets/images/bg-left.png);
@@ -9,7 +10,7 @@ export const MenuContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -18,5 +19,30 @@ export const MenuContainer = styled.div`
   }
   &.page-exit {
     animation: ${Slider.slideOutLeft} 0.2s forwards;
+  }
+
+  ul {
+    margin-top: 15px;
+    margin-left: 10%;
+  }
+  ul li {
+    animation-delay: 0.3s;
+  }
+  ul li a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: inline-block;
+    transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: rgba(160, 168, 220, 0.8);
+    font-size: 4.2857142857rem;
+    letter-spacing: 0.02em;
+    line-height: 0.92;
+    text-decoration: none;
+    &:hover {
+      color: ${Colors.white};
+    }
   }
 `;
