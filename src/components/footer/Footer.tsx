@@ -8,7 +8,6 @@ export default class Footer extends React.Component<IFooterProps, any> {
     return (
       <>
         <MenuFooter>sss</MenuFooter>
-        <div className="home-content__line" />
       </>
     );
   }

@@ -158,7 +158,7 @@ code {
   width: 4px;
   height: 35px;
   border-radius: 2px;
-  margin: 2px;
+  margin: 4px;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   display: inline-block;
@@ -226,8 +226,8 @@ a {
   width: 1px;
   height: 12rem;
   background-color: #ec008c;
-  position: absolute;
-  right: 84px;
+  position: fixed;
+  right: 87px;
   bottom: 0;
 }
 

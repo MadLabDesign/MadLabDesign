@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { HomePage } from './Home.style';
 import Intro from '../Intro/Intro';
+import Social from '../../components/social/Social';
 
 class Home extends React.Component<any> {
   public render() {
@@ -20,7 +21,7 @@ class Home extends React.Component<any> {
           </div>
 
           <div className="background" />
-          <div className="home-content__line" />
+          <Social />
         </HomePage>
         <Intro />
       </>

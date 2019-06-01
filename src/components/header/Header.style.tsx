@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
 export const HeaderContainer = styled.div`
-  padding: 0.8rem;
+  padding: 0.8rem 3rem;
   position: absolute;
   width: 100%;
   display: flex;
@@ -11,6 +11,12 @@ export const HeaderContainer = styled.div`
 `;
 
 export const MenuTab = styled.div`
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
   .info-toggle {
     z-index: 502;
     background-color: #000000;
