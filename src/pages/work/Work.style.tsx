@@ -12,6 +12,8 @@ export const WorkContainer = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  width: 100%;
   &.page-enter {
     animation: ${slideInLeft} 1s forwards;
   }

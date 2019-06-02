@@ -9,7 +9,7 @@ export const HomePage = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
+
   color: white;
   width: 100%;
   padding-left: 3rem;
@@ -54,6 +54,7 @@ export const HomePage = styled.div`
     color: ${Colors.white};
     z-index: 20;
     position: relative;
+    letter-spacing: 0.2rem;
   }
 
   h3 {

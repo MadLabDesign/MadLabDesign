@@ -24,6 +24,7 @@ export const MenuContainer = styled.div`
   ul {
     margin-top: 15px;
     margin-left: 10%;
+    position: relative;
   }
   ul li {
     animation-delay: 0.3s;
@@ -44,6 +45,7 @@ export const MenuContainer = styled.div`
   }
   ul li a {
     padding-top: 13px;
+    position: relative;
     padding-bottom: 13px;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
@@ -55,6 +57,28 @@ export const MenuContainer = styled.div`
     letter-spacing: 0.02em;
     line-height: 0.92;
     text-decoration: none;
+
+    &.effect-underline:after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid;
+      margin-top: 5px;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s, -webkit-transform 0.35s;
+      transition: opacity 0.5s, transform 0.5s;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+    }
+
+    &.effect-underline:hover:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
     &:hover {
       color: ${Colors.primary};
     }

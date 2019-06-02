@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
-import './index.scss';
 import 'animate.css/animate.min.css';
 import 'bulma/css/bulma.css';
+import './index.scss';
 import Home from './pages/home/Home';
 import Menu from './pages/menu/Menu';
 import Header from './components/header/Header';

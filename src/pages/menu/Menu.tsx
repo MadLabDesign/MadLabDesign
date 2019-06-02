@@ -13,16 +13,24 @@ export default class Menu extends React.Component<IMenuProps, any> {
           <>
             <ul>
               <li>
-                <Link to={'/about'}>About</Link>
+                <Link to={'/about'} className="effect-underline">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to={'/work'}>Work</Link>
+                <Link to={'/work'} className="effect-underline">
+                  Work
+                </Link>
               </li>
               <li>
-                <Link to={'/freebies'}>Freebees</Link>
+                <Link to={'/freebies'} className="effect-underline">
+                  Freebees
+                </Link>
               </li>
               <li>
-                <Link to={'/contact'}>Contact</Link>
+                <Link to={'/contact'} className="effect-underline">
+                  Contact
+                </Link>
               </li>
             </ul>
           </>

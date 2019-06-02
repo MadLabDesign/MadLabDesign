@@ -129,6 +129,12 @@ code {
     monospace;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 2 !important;
+  letter-spacing: 0.01rem;
+  color: rgba(255, 255, 255, 0.7);
+}
 /* ===================================================================
  * # preloader - (_preloader-line-scale-pulse-out.scss)
  *
@@ -219,6 +225,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
+  transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 0.4);
+  &:hover {
+    color: #ec008c;
+  }
 }
 
 .home-content__line {
@@ -239,6 +250,6 @@ a {
   left: 0;
   background-image: url(./assets/images/1.jpg);
   background-position: 50% 0%;
-  background-size: cover;
+  background-size: contain;
   z-index: 0;
 }

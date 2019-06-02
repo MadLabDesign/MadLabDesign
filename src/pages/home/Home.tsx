@@ -10,13 +10,15 @@ class Home extends React.Component<any> {
         <HomePage>
           <div className="columns is-vcentered">
             <div className="column">
-              <h3>Welcom to madlab design</h3>
-              <h2 className="content__title">
+              <h3 className="animated slideInLeft delay-0.3s">
+                Welcome to madlab design
+              </h3>
+              <h2 className="content__title animated slideInUp delay-0.3s">
                 UX to Development & everything in between.
               </h2>
             </div>
             <div className="column is-7">
-              <p className="bd-notification is-primary">First column</p>
+              <p>First column</p>
             </div>
           </div>
 
