@@ -3,11 +3,7 @@ import * as Slider from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 
 export const MenuContainer = styled.div`
-  background-image: url(../../assets/images/bg-left.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,6 +11,7 @@ export const MenuContainer = styled.div`
   font-size: calc(10px + 2vmin);
   overflow: hidden;
   color: white;
+  overflow: hidden;
   &.page-enter {
     animation: ${Slider.slideInLeft} 1s forwards;
   }

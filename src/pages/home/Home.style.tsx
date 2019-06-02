@@ -9,7 +9,6 @@ export const HomePage = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
   color: white;
   width: 100%;
   padding-left: 3rem;
@@ -20,22 +19,6 @@ export const HomePage = styled.div`
   }
   &.page-exit {
     animation: ${slideOutLeft} 1s forwards;
-  }
-
-  /* .content {
-    text-align: center;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-items: st;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
-    overflow: hidden;
-  } */
-
-  .background {
-    perspective: 1000px;
   }
 
   .background__copy {
