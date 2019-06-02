@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { slideInLeft, slideOutLeft } from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 
 export const AboutContainer = styled.div`
@@ -13,12 +12,6 @@ export const AboutContainer = styled.div`
   font-size: calc(10px + 2vmin);
   color: white;
   width: 100%;
-  &.page-enter {
-    animation: ${slideInLeft} 1s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutLeft} 1s forwards;
-  }
 `;
 
 export const AboutRight = styled.section`
@@ -43,6 +36,7 @@ export const AboutLeft = styled.section`
     font-size: 4rem;
     letter-spacing: 0.1rem;
     margin-bottom: 0.8rem;
+    width: 100%;
   }
   p.intro {
     font-size: 1.4rem;

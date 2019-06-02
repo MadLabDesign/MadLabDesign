@@ -13,6 +13,7 @@ export const MenuContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  overflow: hidden;
   color: white;
   &.page-enter {
     animation: ${Slider.slideInLeft} 1s forwards;
