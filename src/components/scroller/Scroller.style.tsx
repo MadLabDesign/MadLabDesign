@@ -2,12 +2,16 @@ import styled from 'styled-components';
 
 export const MouseScroller = styled.div`
   .mouse-scroll {
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+    }
   }
 
   @-webkit-keyframes mouse-wheel {

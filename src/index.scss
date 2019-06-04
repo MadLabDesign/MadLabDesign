@@ -244,13 +244,18 @@ a {
 }
 
 .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url(./assets/images/1.jpg);
-  background-position: 50% 0%;
-  background-size: contain;
-  z-index: 0;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(./assets/images/1.jpg);
+    background-position: 50% 0%;
+    background-size: contain;
+    z-index: 0;
+  }
 }

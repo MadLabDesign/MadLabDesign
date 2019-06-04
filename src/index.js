@@ -46,7 +46,11 @@ class App extends React.Component {
                   <PageContainer>
                     <TransitionGroup component={null}>
                       <Header />
-                      <CSSTransition classNames="page" key={location.key}>
+                      <CSSTransition
+                        timeout={0}
+                        classNames="page"
+                        key={location.key}
+                      >
                         <Switch location={location}>
                           <Route exact path="/" component={Home} />
                           <Route path="/menu" component={Menu} />
