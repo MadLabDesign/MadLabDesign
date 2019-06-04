@@ -24,7 +24,7 @@ export default class Menu extends React.Component<IMenuProps, any> {
               </li>
               <li>
                 <Link to={'/freebies'} className="effect-underline">
-                  Freebees
+                  Freebies
                 </Link>
               </li>
               <li>
