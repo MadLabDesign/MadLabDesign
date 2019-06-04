@@ -10,7 +10,7 @@ export default class Intro extends React.Component<IintroProps, any> {
     return (
       <>
         <IntroSection>
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered" id="section-2">
             <div className="column is-half">
               <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <DescriptionBlock>

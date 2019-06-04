@@ -2,6 +2,7 @@ import * as React from 'react';
 import { HomePage } from './Home.style';
 import Intro from '../Intro/Intro';
 import Social from '../../components/social/Social';
+import Scroller from '../../components/scroller/Scroller';
 
 class Home extends React.Component<any> {
   public render() {
@@ -21,7 +22,7 @@ class Home extends React.Component<any> {
               <p>First column</p>
             </div>
           </div>
-
+          <Scroller />
           <div className="background" />
           <Social />
         </HomePage>

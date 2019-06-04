@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
 import 'animate.css/animate.min.css';
@@ -38,33 +38,31 @@ class App extends React.Component {
     const { loading } = this.state;
     return (
       <Loader loading={loading}>
-        <Router>
-          <Route
-            render={({ location }) => {
-              return (
-                <PageContainer>
-                  <TransitionGroup component={null}>
-                    <Header />
-                    <CSSTransition
-                      timeout={3000}
-                      classNames="page"
-                      key={location.key}
-                    >
-                      <Switch location={location}>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/menu" component={Menu} />
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/freebies" component={Freebies} />
-                        <Route path="/work" component={Work} />
-                      </Switch>
-                    </CSSTransition>
-                  </TransitionGroup>
-                </PageContainer>
-              );
-            }}
-          />
-        </Router>
+        <Suspense fallback={<Loader loading={loading} />}>
+          <Router>
+            <Route
+              render={({ location }) => {
+                return (
+                  <PageContainer>
+                    <TransitionGroup component={null}>
+                      <Header />
+                      <CSSTransition classNames="page" key={location.key}>
+                        <Switch location={location}>
+                          <Route exact path="/" component={Home} />
+                          <Route path="/menu" component={Menu} />
+                          <Route path="/about" component={About} />
+                          <Route path="/contact" component={Contact} />
+                          <Route path="/freebies" component={Freebies} />
+                          <Route path="/work" component={Work} />
+                        </Switch>
+                      </CSSTransition>
+                    </TransitionGroup>
+                  </PageContainer>
+                );
+              }}
+            />
+          </Router>
+        </Suspense>
       </Loader>
     );
   }
