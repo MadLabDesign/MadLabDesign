@@ -2,15 +2,17 @@ import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
 export const WorkContainer = styled.div`
-  max-height: 100vh;
-  height: 100%;
   background-color: ${Colors.black};
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: relative;
+
   width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    min-height: 100vh;
+  }
 `;
