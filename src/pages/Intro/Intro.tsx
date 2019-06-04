@@ -12,7 +12,7 @@ export default class Intro extends React.Component<IintroProps, any> {
         <IntroSection>
           <div className="columns is-vcentered" id="section-2">
             <div className="column is-half">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <ScrollAnimation animateIn="fadeIn" delay={300}>
                 <DescriptionBlock>
                   <div className="desctiption">
                     <Link to={'/work'} className="effect-underline">
@@ -27,7 +27,7 @@ export default class Intro extends React.Component<IintroProps, any> {
               </ScrollAnimation>
             </div>
             <div className="column is-half">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <ScrollAnimation animateIn="fadeIn" delay={300}>
                 <DescriptionBlock>
                   <div className="desctiption">
                     <Link to={'/work'} className="effect-underline">
