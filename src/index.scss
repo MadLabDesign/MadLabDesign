@@ -254,8 +254,9 @@ a {
     top: 0;
     left: 0;
     background-image: url(./assets/images/1.jpg);
-    background-position: 50% 0%;
+    background-position: center;
     background-size: contain;
     z-index: 0;
+    background-repeat: no-repeat;
   }
 }

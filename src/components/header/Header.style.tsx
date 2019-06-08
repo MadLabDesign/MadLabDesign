@@ -110,8 +110,13 @@ export const Brand = styled.div`
   color: ${Colors.white};
   position: relative;
   z-index: 9999;
-  right: 3rem;
-  top: 3em;
+  right: 1rem;
+  top: 0.8em;
   font-size: 1rem;
   font-family: 'metropolis-medium', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    right: 3rem;
+    top: 2em;
+  }
 `;
