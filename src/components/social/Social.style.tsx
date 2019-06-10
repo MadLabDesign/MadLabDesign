@@ -7,7 +7,7 @@ export const SocialList = styled.div`
     margin: 0;
     position: fixed;
     bottom: 10rem;
-    right: 4rem;
+    right: 2rem;
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);

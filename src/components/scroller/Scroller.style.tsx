@@ -6,7 +6,7 @@ export const MouseScroller = styled.div`
     @media screen and (min-width: 768px) {
       position: absolute;
       z-index: 10;
-      bottom: 0;
+      bottom: 1rem;
       left: 50%;
       display: block;
       -webkit-transform: translate3d(-50%, -50%, 0);
@@ -81,5 +81,13 @@ export const MouseScroller = styled.div`
   .mouse-scroll__label {
     font-family: 'Helvetia Neue', Arial, sans-serif;
     font-size: 13px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 1rem;
+    left: 40%;
   }
 `;

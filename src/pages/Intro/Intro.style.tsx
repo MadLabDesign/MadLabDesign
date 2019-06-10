@@ -16,7 +16,7 @@ export const DescriptionBlock = styled.div`
 
   .desctiption {
     width: 270px;
-    background-color: ${Colors.black};
+
     position: relative;
     h2 {
       font-family: Gilroy, Helvetica, Arial, sans-serif;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
 export const HeaderContainer = styled.div`
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 1rem;
   position: absolute;
   width: 100%;
   display: flex;
