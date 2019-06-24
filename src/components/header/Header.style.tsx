@@ -118,6 +118,7 @@ export const Brand = styled.div`
   width: 100px;
   height: 70px;
   display: block;
+  z-index: 99999;
 
   @media screen and (min-width: 768px) {
     right: 3rem;

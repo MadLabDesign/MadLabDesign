@@ -1,39 +1,47 @@
 import * as React from 'react';
-import { MenuContainer } from './Menu.style';
+import { MenuContainer, MenuLeft, MenuRight } from './Menu.style';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/Footer';
 
-export interface IMenuProps {}
+export interface IMenuProps {
+  isAbout: false;
+  isWork: false;
+  isFreebies: false;
+  isContact: false;
+}
 
 export default class Menu extends React.Component<IMenuProps, any> {
-  public render() {
+  render() {
     return (
       <>
-        <MenuContainer className="animated slideInLeft delay-0.3s">
-          <>
-            <ul>
-              <li>
-                <Link to={'/about'} className="effect-underline">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to={'/work'} className="effect-underline">
-                  Work
-                </Link>
-              </li>
-              <li>
-                <Link to={'/freebies'} className="effect-underline">
-                  Freebies
-                </Link>
-              </li>
-              <li>
-                <Link to={'/contact'} className="effect-underline">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </>
+        <MenuContainer>
+          <MenuLeft className="animated slideInLeft delay-0.3s">
+            <>
+              <ul>
+                <li>
+                  <Link to={'/about'} className="effect-underline">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/work'} className="effect-underline">
+                    Work
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/freebies'} className="effect-underline">
+                    Freebies
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/contact'} className="effect-underline">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </>
+          </MenuLeft>
+          <MenuRight className="animated slideInRight delay-0.8s" />
           <Footer />
         </MenuContainer>
       </>
