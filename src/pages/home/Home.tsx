@@ -20,7 +20,7 @@ class Home extends React.Component<any> {
               </h2>
             </div>
           </HomeLeftContainer>
-          <HomeRightContainer>
+          <HomeRightContainer className="animated fadeInRight delay-0.3s">
             <div>
               <p className="title-blurb">
                 MadLab is just one crazy guy, called Blaine Lingard and this is

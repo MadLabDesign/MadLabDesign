@@ -7,7 +7,9 @@ export default class Footer extends React.Component<IFooterProps, any> {
   public render() {
     return (
       <>
-        <MenuFooter>sss</MenuFooter>
+        <MenuFooter>
+          Copyright MadLabDesign 2018 Design by MadLab Design
+        </MenuFooter>
       </>
     );
   }

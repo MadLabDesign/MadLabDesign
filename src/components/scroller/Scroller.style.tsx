@@ -6,7 +6,7 @@ export const MouseScroller = styled.div`
     @media screen and (min-width: 768px) {
       position: absolute;
       z-index: 10;
-      bottom: 1rem;
+      bottom: 0.8rem;
       left: 50%;
       display: block;
       -webkit-transform: translate3d(-50%, -50%, 0);

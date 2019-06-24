@@ -6,7 +6,7 @@ const CardContainer = styled.div`
 `;
 export interface ICardProps {}
 
-export default class Card extends React.Component<ICardProps, any> {
+export default class ProfileCard extends React.Component<ICardProps, any> {
   public render() {
     return (
       <CardContainer>
