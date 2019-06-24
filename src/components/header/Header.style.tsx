@@ -3,7 +3,7 @@ import { Colors } from '../../lib/theme/Colors';
 
 import img from '../../assets/images/logo.svg';
 export const HeaderContainer = styled.div`
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1rem 0.8rem 3rem;
   position: absolute;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@ export const MenuTab = styled.div`
   .info-toggle {
     z-index: 502;
     background-color: #000000;
-
+    /* border: 1px solid ${Colors.whiteLight}; */
     font-family: 'metropolis-medium', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ export const MenuTab = styled.div`
     height: 1px;
     margin-top: -1px;
     position: absolute;
-    left: 2rem;
+    left: 0.65rem;
     top: 50%;
     right: auto;
     bottom: auto;

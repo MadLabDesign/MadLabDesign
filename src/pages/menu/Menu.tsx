@@ -9,7 +9,7 @@ export default class Menu extends React.Component<IMenuProps, any> {
   public render() {
     return (
       <>
-        <MenuContainer>
+        <MenuContainer className="animated slideInLeft delay-0.3s">
           <>
             <ul>
               <li>
