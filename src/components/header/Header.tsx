@@ -38,7 +38,7 @@ export default class Header extends React.Component<IHeaderProps, any> {
             )}
           </div>
         </MenuTab>
-        <Brand>Madlab</Brand>
+        <Brand />
       </HeaderContainer>
     );
   }

@@ -15,9 +15,35 @@ export default class Social extends React.Component<ISocialProps, any> {
             </a>
           </li>
           <li>
-            <a href="https://dribbble.com/MadLabDesign">
+            <a
+              href="linkedin.com/in/blaine-lingard-55247436"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin-in" aria-hidden="true" />
+              <span>Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://dribbble.com/MadLabDesign"
+              title="Dribbble"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-dribbble" aria-hidden="true" />
               <span>Dribbble</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              title="Github"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github" aria-hidden="true" />
+              <span>Github</span>
             </a>
           </li>
         </ul>

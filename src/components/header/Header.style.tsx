@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
+import img from '../../assets/images/logo.svg';
 export const HeaderContainer = styled.div`
   padding: 0.8rem 1rem;
   position: absolute;
@@ -20,7 +21,7 @@ export const MenuTab = styled.div`
   .info-toggle {
     z-index: 502;
     background-color: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+
     font-family: 'metropolis-medium', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
@@ -45,7 +46,7 @@ export const MenuTab = styled.div`
     height: 1px;
     margin-top: -1px;
     position: absolute;
-    left: 10px;
+    left: 2rem;
     top: 50%;
     right: auto;
     bottom: auto;
@@ -109,11 +110,14 @@ export const MenuTab = styled.div`
 export const Brand = styled.div`
   color: ${Colors.white};
   position: relative;
-  z-index: 9999;
   right: 1rem;
-  top: 0.8em;
-  font-size: 1rem;
-  font-family: 'metropolis-medium', sans-serif;
+  margin-top: 2rem;
+  background-image: url(${img});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 70px;
+  display: block;
 
   @media screen and (min-width: 768px) {
     right: 3rem;
