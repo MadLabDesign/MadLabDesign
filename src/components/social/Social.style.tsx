@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../lib/theme/Colors';
 
 export const SocialList = styled.div`
   .home-social {
@@ -6,15 +7,16 @@ export const SocialList = styled.div`
     font-family: 'metropolis-regular', sans-serif;
     margin: 0;
     position: fixed;
-    bottom: 10rem;
+    bottom: 250px;
     right: 2rem;
+    z-index: 99999;
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
   }
 
   .home-social a {
-    color: #ffffff;
+    color: ${Colors.whiteLight};
     font-size: 1.2rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
