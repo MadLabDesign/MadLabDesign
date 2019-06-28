@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
+import img from '../../assets/images/about-me-bg.png';
 export const AboutContainer = styled.div`
   background-color: ${Colors.black};
   display: flex;
@@ -18,25 +19,37 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutRight = styled.section`
-  background-color: ${Colors.primaryBG};
+  background-color: ${Colors.black};
   min-height: 100vh;
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  padding: 3rem 0;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 1rem;
   overflow: scroll;
   flex-direction: row;
+  p {
+    color: ${Colors.white};
+    strong {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     width: 65%;
     padding: 0.8rem 3rem;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     height: 100vh;
   }
 `;
 
 export const AboutLeft = styled.section`
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: ${Colors.black};
   height: 100vh;
   width: 100%;

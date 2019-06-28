@@ -7,12 +7,15 @@ export const SocialList = styled.div`
     font-family: 'metropolis-regular', sans-serif;
     margin: 0;
     position: fixed;
-    bottom: 250px;
+    bottom: 160px;
     right: 2rem;
     z-index: 99999;
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .home-social a {
@@ -86,5 +89,17 @@ export const SocialList = styled.div`
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+  }
+  .home-content__line {
+    display: block;
+    width: 1px;
+    height: 250px;
+    background-color: #ec008c;
+    position: fixed;
+    right: 60px;
+    bottom: 0;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;

@@ -9,7 +9,7 @@ export const Colors = {
 
   darkPrimary: '#3d444b',
   white: '#FFFFFF',
-  whiteLight: 'rgba(255, 255, 255, 0.2)',
+  whiteLight: 'rgba(255, 255, 255, 0.4)',
 
   buttonText: '#464763',
 

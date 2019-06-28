@@ -3,12 +3,16 @@ import { Colors } from '../../lib/theme/Colors';
 
 import img from '../../assets/images/logo.svg';
 export const HeaderContainer = styled.div`
-  padding: 0.8rem 1rem 0.8rem 3rem;
+  padding: 0.8rem;
   position: absolute;
   width: 100%;
   display: flex;
+  height: 50px;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    padding: 0.8rem 1rem 0.8rem 3rem;
+  }
 `;
 
 export const MenuTab = styled.div`
@@ -20,7 +24,7 @@ export const MenuTab = styled.div`
   }
   .info-toggle {
     z-index: 502;
-    background-color: #000000;
+    /* background-color: #000000; */
     /* border: 1px solid ${Colors.whiteLight}; */
     font-family: 'metropolis-medium', sans-serif;
     font-size: 12px;
@@ -119,7 +123,7 @@ export const Brand = styled.div`
   height: 70px;
   display: block;
   z-index: 99999;
-
+  top: 1.5rem;
   @media screen and (min-width: 768px) {
     right: 3rem;
     top: 2em;

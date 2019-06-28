@@ -15,8 +15,13 @@ export const HomePage = styled.div`
   width: 100%;
   padding-left: 0.8rem;
   background-image: url(${img});
+
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    background-size: contain;
+  }
 
   &.page-enter {
     animation: ${slideInLeft} 1s forwards;
@@ -30,7 +35,7 @@ export const HomePage = styled.div`
   }
 
   .content__title {
-    top: 25%;
+    top: 10%;
     font-family: 'domine-regular', serif;
     font-size: 1.8rem;
     font-weight: normal;
@@ -40,35 +45,10 @@ export const HomePage = styled.div`
     margin: 0;
     text-align: center;
     color: ${Colors.white};
-
     position: relative;
     letter-spacing: 0.2rem;
     span {
       color: ${Colors.madlabPrimary};
-    }
-  }
-
-  h3 {
-    top: 25%;
-    font-family: 'metropolis-medium', sans-serif;
-    font-size: 0.8rem;
-    line-height: 1.286;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 3rem;
-    padding-left: 55px;
-    position: relative;
-    &:before {
-      content: '';
-      display: block;
-      background-color: rgba(236, 0, 140, 0.6);
-      width: 40px;
-      height: 1px;
-      position: absolute;
-      left: 0;
-      top: 50%;
     }
   }
 
@@ -83,30 +63,6 @@ export const HomePage = styled.div`
       text-align: left;
       max-width: 600px;
     }
-    h3 {
-      top: 25%;
-      font-family: 'metropolis-medium', sans-serif;
-      font-size: 0.8rem;
-      line-height: 1.286;
-      text-transform: uppercase;
-      letter-spacing: 0.3rem;
-      color: white;
-      margin-top: 0;
-      margin-bottom: 3rem;
-      padding-left: 55px;
-      z-index: 20;
-      position: relative;
-      &:before {
-        content: '';
-        display: block;
-        background-color: rgba(236, 0, 140, 0.6);
-        width: 40px;
-        height: 1px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-      }
-    }
   }
 `;
 
@@ -116,7 +72,11 @@ export const HomeLeftContainer = styled.div`
   flex-direction: row;
   min-height: 100%;
   flex-wrap: wrap;
-  min-width: 80%;
+  min-width: 65%;
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    text-align: center;
+  }
 `;
 
 export const HomeRightContainer = styled.div`
@@ -127,10 +87,15 @@ export const HomeRightContainer = styled.div`
   flex-direction: row;
   min-height: 100%;
   flex-wrap: wrap;
-  min-width: 20%;
+
   padding-bottom: 3rem;
   padding-right: 3rem;
   text-align: right;
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    text-align: center;
+    padding: 0.8rem;
+  }
   .title-blurb {
     font-family: 'metropolis-regular';
     font-size: 1rem;
@@ -142,12 +107,22 @@ export const HomeRightContainer = styled.div`
 
     margin-bottom: 0.8rem;
     clear: both;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 0.8rem;
+    }
   }
   .desc {
     display: block;
-    max-width: 350px;
+    max-width: 500px;
     float: right;
-    font-size: 0.8rem;
+    font-family: 'metropolis-light';
+    font-size: 1rem;
+    line-height: 1.8em;
     color: ${Colors.whiteLight};
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 0.8rem;
+    }
   }
 `;

@@ -56,6 +56,9 @@ export const MenuContainer = styled.div`
     letter-spacing: 0.02em;
     line-height: 0.92;
     text-decoration: none;
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
 
     &.effect-underline:after {
       content: '';

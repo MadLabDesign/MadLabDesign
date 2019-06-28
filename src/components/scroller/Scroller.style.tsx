@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../lib/theme/Colors';
 
 export const MouseScroller = styled.div`
   .mouse-scroll {
@@ -6,7 +7,7 @@ export const MouseScroller = styled.div`
     @media screen and (min-width: 768px) {
       position: absolute;
       z-index: 10;
-      bottom: 0.8rem;
+      bottom: -10px;
       left: 50%;
       display: block;
       -webkit-transform: translate3d(-50%, -50%, 0);
@@ -57,7 +58,7 @@ export const MouseScroller = styled.div`
     height: 32px;
     margin: 0 auto 10px;
     box-sizing: border-box;
-    border: 2px solid #fff;
+    border: 2px solid ${Colors.madlabPrimary};
     border-radius: 20px;
   }
   .mouse-scroll__mouse__wheel {
@@ -68,7 +69,7 @@ export const MouseScroller = styled.div`
     width: 4px;
     height: 4px;
     margin: -2px 0 0 -2px;
-    background: #fff;
+    background: ${Colors.madlabPrimary};
     border-radius: 50%;
     opacity: 0;
     -webkit-animation: mouse-wheel 2s linear infinite;
@@ -79,15 +80,15 @@ export const MouseScroller = styled.div`
     animation-delay: 1s;
   }
   .mouse-scroll__label {
-    font-family: 'Helvetia Neue', Arial, sans-serif;
-    font-size: 13px;
+    font-family: 'metropolis-light';
+    font-size: 10px;
+    margin-top: -20px;
+    position: relative;
+    width: 100%;
+    top: -10px;
   }
 
   @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 1rem;
-    left: 40%;
+    display: none;
   }
 `;
