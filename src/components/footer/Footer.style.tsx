@@ -8,7 +8,6 @@ export const MenuFooter = styled.footer`
   bottom: 0;
   padding: 0.8rem 2rem;
   font-size: 10px;
-  right: 100px;
 
   .home-content__line {
     display: block;
