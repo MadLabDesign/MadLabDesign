@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SubTitle = styled.h3`
   top: 25%;
   font-family: 'metropolis-medium', sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   line-height: 5;
   text-transform: uppercase;
   letter-spacing: 0.3rem;

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { WorkContainer } from './Work.style';
-import { AboutLeft, AboutRight } from '../about/About.style';
+import { WorkContainer, WorkLeft } from './Work.style';
+import { AboutRight } from '../about/About.style';
 
 export interface IContactProps {}
 
@@ -8,7 +8,7 @@ export default class Work extends React.Component<IContactProps, any> {
   public render() {
     return (
       <WorkContainer>
-        <AboutLeft className="animated slideInLeft delay-0.3s">
+        <WorkLeft className="animated slideInLeft delay-0.3s">
           <h1 className="animated slideInLeft delay-0.3s">Work</h1>
           <br />
           <p className="intro animated slideInUp delay-0.3s">
@@ -20,7 +20,7 @@ export default class Work extends React.Component<IContactProps, any> {
             actual people involved in your project for an effective and straight
             explanation of the accomplished work? Not often hu?
           </p>
-        </AboutLeft>
+        </WorkLeft>
         <AboutRight className="animated slideInRight delay-0.8s">
           <div className="tile is-ancestor">
             <div className="tile is-vertical is-8">
