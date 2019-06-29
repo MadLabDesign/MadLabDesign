@@ -16,3 +16,31 @@ export const WorkContainer = styled.div`
     min-height: 100vh;
   }
 `;
+
+export const WorkLeft = styled.section`
+  background-color: ${Colors.black};
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0.8rem 3rem;
+  h1 {
+    font-family: 'domine-bold';
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+  p.intro {
+    font-size: 1.4rem;
+    line-height: 1.5 !important;
+    margin-bottom: 0.8em;
+    clear: both;
+    color: ${Colors.whiteLight};
+    font-family: 'metropolis-light';
+  }
+  @media screen and (min-width: 768px) {
+    width: 35%;
+  }
+`;

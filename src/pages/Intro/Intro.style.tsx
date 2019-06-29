@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
 export const IntroSection = styled.div`
-  background-color: ${Colors.black};
-  color: white;
+  color: ${Colors.grayLight};
 `;
 
 export const DescriptionBlock = styled.div`
@@ -16,7 +15,6 @@ export const DescriptionBlock = styled.div`
 
   .desctiption {
     width: 270px;
-
     position: relative;
     h2 {
       font-family: Gilroy, Helvetica, Arial, sans-serif;

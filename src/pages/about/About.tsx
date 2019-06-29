@@ -1,6 +1,12 @@
 import * as React from 'react';
-import { AboutContainer, AboutRight, AboutLeft } from './About.style';
+import {
+  AboutContainer,
+  AboutRight,
+  AboutLeft,
+  ProfileImage,
+} from './About.style';
 import { SubTitle } from '../../lib/theme/Global.styles';
+import { Button } from '../../components/buttons/Button';
 
 export interface IAboutProps {}
 
@@ -21,38 +27,60 @@ export default class About extends React.Component<IAboutProps, any> {
         </AboutLeft>
         <AboutRight className="animated slideInRight delay-0.8s">
           <>
-            <p>
-              Blaine started his career about 12 years ago as a{' '}
-              <strong>graffiti artist</strong> which lead him to study{' '}
-              <strong>graphic and web design</strong> at Cape College.
-            </p>
-            <p>
-              Through the years he has worked with Playhugelottos, which
-              included the creation of Lottostar and LottoRewards. After 5 years
-              with PlayHugeLottos, Blaine decided to work as a contract
-              freelancer and started his journey of late nights learning and
-              improving his skills to further his career as a UI Designer and
-              Developer.
-            </p>
-            <p>
-              He worked at Snapscan as there UX engineer and Frontend developer.
-              To help with there apps facelift. Still working as a freelancer
-              Blaine has been contracted to a few other agencies, such as Ripple
-              digital, liquid thought and some other start-up projects.{' '}
-            </p>
-            <p>
-              Well living here in Kenilworth. He enjoys learning from others
-              which helps challenge his skill level. In his free time, he loves
-              to ride his Fireblade through the Cape Town and surfing with his
-              mates in Kommetjie.
-            </p>
-            <p>
-              {' '}
-              Besides watching a lot of cartoons, you can mostly find him behind
-              his laptop, catching up on new design trends and coding ideology
-              or just taking his girlfriend out and catching up with friends
-              over a few too many drinks.
-            </p>
+            <br />
+            <br />
+            <div className="columns is-gapless">
+              <div className="column">
+                <p>
+                  <span className="first-letter">B</span>laine Lingard started
+                  his career about 12 years ago as a{' '}
+                  <strong>graffiti artist</strong> which lead him to study{' '}
+                  <strong>graphic and web design</strong> at Cape College.
+                </p>
+              </div>
+            </div>
+
+            <div className="columns ">
+              <div className="column">
+                <p>
+                  So a little bit about me… I love everything Design from Web
+                  design, development, Graphic design, Packaging, Industrial
+                  design and understanding what we do and how it should be done.
+                </p>
+                <p>
+                  I’m always improving myself by going the extra mile and
+                  learning from others. My efforts have made me understand what
+                  I do and what needs to be done as the trends of design and
+                  code evolves in our industry.
+                </p>
+              </div>
+              <div className="column is-one-third">
+                <ProfileImage />
+              </div>
+            </div>
+            <div className="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+              <div className="column">
+                <p>
+                  What I know about myself... I love working with people and
+                  learning what I can do to improve my skills in all aspects of
+                  design and development. My thoughts on my position: You should
+                  know or try to understand all areas of design, so that you
+                  don’t stop the flow of work, and help everyone involved in the
+                  project.
+                </p>
+              </div>
+              <div className="column ">
+                <p>
+                  If you don’t know something… ASK or Research, never sit
+                  quietly and hope for the best, learning and finding out where
+                  you can improve yourself, helps you and the company grow
+                </p>
+                <Button className="ripple">Resumé</Button>
+              </div>
+            </div>
+
+            <br />
+            <br />
           </>
         </AboutRight>
       </AboutContainer>
