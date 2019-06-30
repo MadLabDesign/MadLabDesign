@@ -60,7 +60,7 @@ export const AboutRight = styled.section`
     width: 65%;
     padding: 80px 3rem;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     min-height: auto;
     height: 100%;
     overflow: scroll;
@@ -77,7 +77,7 @@ export const AboutLeft = styled.section`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   padding: 0.8rem 3rem;
   h1 {
     font-family: 'domine-bold';

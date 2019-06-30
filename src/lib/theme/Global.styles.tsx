@@ -9,7 +9,7 @@ export const SubTitle = styled.h3`
   letter-spacing: 0.3rem;
   color: white;
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   padding-left: 55px;
   position: relative;
   &:before {

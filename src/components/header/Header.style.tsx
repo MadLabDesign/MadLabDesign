@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { Colors } from '../../lib/theme/Colors';
 
 import img from '../../assets/images/logo.svg';
+import { Link } from 'react-router-dom';
 export const HeaderContainer = styled.div`
   padding: 0.8rem;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   height: 50px;
   align-items: center;
@@ -111,7 +112,7 @@ export const MenuTab = styled.div`
   }
 `;
 
-export const Brand = styled.div`
+export const Brand = styled(Link)`
   color: ${Colors.white};
   position: relative;
   right: 1rem;

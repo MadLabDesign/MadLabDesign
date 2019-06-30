@@ -3,6 +3,7 @@ import { Colors } from '../../lib/theme/Colors';
 
 export const IntroSection = styled.div`
   color: ${Colors.grayLight};
+  background-color: ${Colors.black};
 `;
 
 export const DescriptionBlock = styled.div`
@@ -10,11 +11,19 @@ export const DescriptionBlock = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  flex-direction: column;
+  height: 100%;
+  min-height: 300px;
+
+  flex-direction: row;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    height: 100vh;
+  }
 
   .desctiption {
     width: 270px;
+
     position: relative;
     h2 {
       font-family: Gilroy, Helvetica, Arial, sans-serif;

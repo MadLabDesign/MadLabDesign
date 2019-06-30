@@ -113,7 +113,7 @@ export const MenuLeft = styled.section`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   padding: 0.8rem 3rem;
   h1 {
     font-family: 'domine-bold';

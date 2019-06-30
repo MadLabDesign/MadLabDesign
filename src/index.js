@@ -19,7 +19,6 @@ import Freebies from './pages/freebies/Freebies';
 import Work from './pages/work/Work';
 
 const PageContainer = styled.div`
-  width: 100vw;
   height: 100vh;
 `;
 
@@ -48,7 +47,7 @@ class App extends React.Component {
                       <Header />
                       <CSSTransition
                         timeout={0}
-                        classNames="page"
+                        classNames="fade-appear"
                         key={location.key}
                       >
                         <Switch location={location}>

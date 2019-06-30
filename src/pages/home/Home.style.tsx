@@ -68,7 +68,7 @@ export const HomePage = styled.div`
 
 export const HomeLeftContainer = styled.div`
   display: flex;
-  align-content: center;
+  align-items: center;
   flex-direction: row;
   min-height: 100%;
   flex-wrap: wrap;
