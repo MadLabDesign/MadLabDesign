@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { slideInLeft, slideOutLeft } from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 
-import img from '../../assets/images/1.jpg';
+import img from '../../assets/images/1.png';
 
 export const HomePage = styled.div`
   min-height: 100vh;
