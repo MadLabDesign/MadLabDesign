@@ -1,9 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
-import 'animate.css/animate.min.css';
-import 'bulma/css/bulma.css';
-import './index.scss';
+import './global-styles'
 import Home from './pages/home/Home';
 import Menu from './pages/menu/Menu';
 import Header from './components/header/Header';
@@ -43,6 +40,7 @@ class App extends React.Component {
               render={({ location }) => {
                 return (
                   <PageContainer>
+
                     <TransitionGroup component={null}>
                       <Header />
                       <CSSTransition

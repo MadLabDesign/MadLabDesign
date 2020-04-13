@@ -5,7 +5,7 @@ import img from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 export const HeaderContainer = styled.div`
   padding: 0.8rem;
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   display: flex;
   height: 50px;

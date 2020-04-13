@@ -25,6 +25,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "framer-motion": "^1.10.3",
     "gh-pages": "^2.2.0",
+    "history": "^4.10.1",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",
     "lorem-ipsum": "^2.0.3",

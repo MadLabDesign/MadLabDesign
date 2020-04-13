@@ -30,8 +30,8 @@ export const AboutRight = styled.section`
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  padding: 80px 1rem;
-  overflow: scroll;
+  padding: 50px 1rem;
+
   flex-direction: row;
   p {
     font-size: 1rem;
@@ -62,9 +62,15 @@ export const AboutRight = styled.section`
     flex-wrap: wrap;
     align-items: center;
     min-height: auto;
-    height: 100%;
-    overflow: scroll;
     margin-top: 100px;
+    height: 100%;
+    overflow: -moz-scrollbars-none !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none !important;
+    cursor: url(../img/touch.png) 32 32, auto;
+    ::-webkit-scrollbar {
+      display: none !important;
+    }
   }
 `;
 
