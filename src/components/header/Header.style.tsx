@@ -8,7 +8,8 @@ export const HeaderContainer = styled.div`
   position: fixed;
   min-width: 100%;
   display: flex;
-  height: 50px;
+  height: fit-content;
+  z-index:20;
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {

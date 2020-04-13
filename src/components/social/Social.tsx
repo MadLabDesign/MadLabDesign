@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SocialList } from './Social.style';
 
-export interface ISocialProps {}
+export interface ISocialProps { }
 
 export default class Social extends React.Component<ISocialProps, any> {
   public render() {
@@ -9,7 +9,7 @@ export default class Social extends React.Component<ISocialProps, any> {
       <SocialList>
         <ul className="home-social">
           <li>
-            <a href="mailto:support@madlab.design">
+            <a href="mailto:hello@madlab.design">
               <i className="far fa-envelope" aria-hidden="true" />
               <span>Contact</span>
             </a>

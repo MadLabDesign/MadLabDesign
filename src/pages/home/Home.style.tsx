@@ -34,7 +34,7 @@ export const HomePage = styled.div`
 
   .content__title {
     top: 10%;
-    font-family: 'domine-regular', serif;
+    font-family: 'metropolis-regular', sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
     mix-blend-mode: screen;
