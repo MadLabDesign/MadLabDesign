@@ -123,7 +123,7 @@ export const Brand = styled(Link)`
   width: 100px;
   height: 70px;
   display: block;
-  z-index: 99999;
+  z-index:10;
   top: 1.5rem;
   @media screen and (min-width: 768px) {
     right: 3rem;

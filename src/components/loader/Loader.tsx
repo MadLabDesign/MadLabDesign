@@ -7,7 +7,7 @@ export interface ILoadingProps {
   bgColor?: string;
   spinnerColor?: string;
   textColor?: string;
-  loading?: boolean;
+  loading?: any;
   logoSrc?: string;
   text?: string;
 }

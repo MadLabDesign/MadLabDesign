@@ -20,7 +20,7 @@ class Cell extends Component {
                         <Slug delay={600}>
                             <div className="circle" style={{ background: css }} />
                             <div className="close" onClick={toggle} >
-                                ss <CloseOutlined />
+                                <CloseOutlined />
 
                             </div>
                             <h1>{name}</h1>

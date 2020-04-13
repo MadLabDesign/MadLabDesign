@@ -24,6 +24,7 @@
     "caniuse-lite": "^1.0.30001041",
     "copy-webpack-plugin": "^5.1.1",
     "framer-motion": "^1.10.3",
+    "gh-pages": "^2.2.0",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",
     "lorem-ipsum": "^2.0.3",
@@ -44,6 +45,8 @@
     "typescript": "^3.5.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build --verbose",
     "test": "react-scripts test",
@@ -83,5 +86,5 @@
   "bugs": {
     "url": "https://github.com/MadLabDesign/MadLabDesign/issues"
   },
-  "homepage": "https://github.com/MadLabDesign/MadLabDesign#readme"
+  "homepage": "https://madlabdesign.github.io/"
 }

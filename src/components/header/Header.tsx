@@ -30,12 +30,12 @@ export default class Header extends React.Component<IHeaderProps, any> {
                 </div>
               </Link>
             ) : (
-              <Link to="/menu">
-                <div className="info-toggle ">
-                  <span className="info-menu-icon" />
-                </div>
-              </Link>
-            )}
+                <Link to="/menu">
+                  <div className="info-toggle ">
+                    <span className="info-menu-icon" />
+                  </div>
+                </Link>
+              )}
           </div>
         </MenuTab>
         <Brand to="/" />
