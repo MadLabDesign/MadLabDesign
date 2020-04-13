@@ -20,30 +20,30 @@ const Menu: FunctionComponent<IMenuProps> = (props) => {
   return (
     <MenuContainer>
       <MenuLeft className="animated slideInLeft delay-0.3s">
-        <>
-          <ul>
-            <li>
-              <Link to={'/about'} className="effect-underline">
-                About
+
+        <ul>
+          <li>
+            <Link to={'/about'} className="effect-underline">
+              About
             </Link>
-            </li>
-            <li>
-              <Link to={'/work'} className="effect-underline">
-                Work
+          </li>
+          <li>
+            <Link to={'/work'} className="effect-underline">
+              Work
             </Link>
-            </li>
-            <li>
-              <Link to={'/freebies'} className="effect-underline">
-                Freebies
+          </li>
+          <li>
+            <Link to={'/freebies'} className="effect-underline">
+              Freebies
             </Link>
-            </li>
-            <li>
-              <Link to={'/contact'} className="effect-underline">
-                Contact
+          </li>
+          <li>
+            <Link to={'/contact'} className="effect-underline">
+              Contact
             </Link>
-            </li>
-          </ul>
-        </>
+          </li>
+        </ul>
+
       </MenuLeft>
       <MenuRight className="animated slideInRight delay-0.8s" />
       <Footer />

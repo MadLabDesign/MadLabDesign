@@ -17,6 +17,8 @@ export const HomePage = styled.div`
   background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     background-size: contain;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &.page-enter {
@@ -38,7 +40,7 @@ export const HomePage = styled.div`
     mix-blend-mode: screen;
     line-height: 1.4;
     text-transform: uppercase;
-    margin: 0;
+    margin: 2rem 0 11rem;
     z-index: 1;
     text-align: center;
     color: ${Colors.white};
@@ -59,6 +61,7 @@ export const HomePage = styled.div`
       font-size: 2.8rem;
       text-align: left;
       max-width: 600px;
+      margin: 0;
     }
   }
 `;
@@ -107,6 +110,7 @@ export const HomeRightContainer = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
       font-size: 0.8rem;
+      float: none;
     }
   }
   .desc {
@@ -121,6 +125,7 @@ export const HomeRightContainer = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
       font-size: 0.8rem;
+      float: none;
     }
   }
 `;

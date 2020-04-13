@@ -4,6 +4,7 @@ import { Colors } from '../../lib/theme/Colors';
 export const IntroSection = styled.div`
   color: ${Colors.grayLight};
   background-color: ${Colors.black};
+  height: 100%;
 `;
 
 export const DescriptionBlock = styled.div`
@@ -11,7 +12,7 @@ export const DescriptionBlock = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 50vh;
   min-height: 300px;
 
   flex-direction: row;
