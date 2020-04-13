@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { slideInLeft, slideOutLeft } from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 
-import img from '../../assets/images/1.png';
-
 export const HomePage = styled.div`
   min-height: 100vh;
   height: 100%;
@@ -13,8 +11,6 @@ export const HomePage = styled.div`
   color: white;
   flex-wrap: wrap;
   width: 100%;
-  padding-left: 0.8rem;
-  background-image: url(${img});
 
   background-position: center;
   background-size: cover;
@@ -43,6 +39,7 @@ export const HomePage = styled.div`
     line-height: 1.4;
     text-transform: uppercase;
     margin: 0;
+    z-index: 1;
     text-align: center;
     color: ${Colors.white};
     position: relative;
@@ -87,7 +84,7 @@ export const HomeRightContainer = styled.div`
   flex-direction: row;
   min-height: 100%;
   flex-wrap: wrap;
-
+  z-index: 1;
   padding-bottom: 3rem;
   padding-right: 3rem;
   text-align: right;
@@ -104,7 +101,7 @@ export const HomeRightContainer = styled.div`
     line-height: 0.2;
     letter-spacing: 0.1rem;
     color: ${Colors.white};
-
+    z-index: 1;
     margin-bottom: 0.8rem;
     clear: both;
     @media screen and (max-width: 768px) {
@@ -119,6 +116,7 @@ export const HomeRightContainer = styled.div`
     font-family: 'metropolis-light';
     font-size: 1rem;
     line-height: 1.8em;
+    z-index: 1;
     color: ${Colors.whiteLight};
     @media screen and (max-width: 768px) {
       text-align: center;

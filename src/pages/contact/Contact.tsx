@@ -1,14 +1,15 @@
-import * as React from 'react';
+import React, { FunctionComponent } from 'react';
 import { ContactContainer } from './Contact.style';
 
-export interface IContactProps {}
-
-export default class Contact extends React.Component<IContactProps, any> {
-  public render() {
-    return (
-      <ContactContainer>
-        <h1>Contact me</h1>
-      </ContactContainer>
-    );
-  }
+interface IContactProps {
 }
+
+const Contact: FunctionComponent<IContactProps> = (props) => {
+  return (
+    <ContactContainer>
+      <h1>Contact me</h1>
+    </ContactContainer>
+  );
+};
+
+export default Contact;

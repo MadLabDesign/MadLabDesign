@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { MouseScroller } from './Scroller.style';
 
-export interface IScrollerProps {}
+export interface IScrollerProps { }
 
 export default class Scroller extends React.Component<IScrollerProps, any> {
   public render() {
@@ -12,7 +12,6 @@ export default class Scroller extends React.Component<IScrollerProps, any> {
             <span className="mouse-scroll__mouse__wheel mouse-scroll__mouse__wheel--1" />
             <span className="mouse-scroll__mouse__wheel mouse-scroll__mouse__wheel--2" />
           </span>
-          <span className="mouse-scroll__label">LET THE STORY BEGIN</span>
         </a>
       </MouseScroller>
     );
