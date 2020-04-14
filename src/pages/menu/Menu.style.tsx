@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import * as Slider from '../../components/slider/Slider';
 import { Colors } from '../../lib/theme/Colors';
 

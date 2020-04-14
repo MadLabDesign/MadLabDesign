@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
+import { Button } from 'antd';
 
-export const Button = styled.button`
+export const Buttons = styled(Button)`
   cursor: pointer;
   padding: 10px 40px;
   border: 1px solid #e503a8;

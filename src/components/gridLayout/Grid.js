@@ -30,7 +30,7 @@ export default class Grid extends React.Component {
     };
     static defaultProps = {
         occupySpace: true,
-        columns: 3,
+        columns: 1,
         margin: 0,
         heights: 400,
         lockScroll: false,
