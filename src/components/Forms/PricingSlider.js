@@ -2,9 +2,9 @@ import React from "react";
 
 import { Range, getTrackBackground } from "react-range";
 
-const STEP = 0.1;
-const MIN = 0;
-const MAX = 800000;
+const STEP = 1;
+const MIN = 100;
+const MAX = 80000;
 
 export default class PricingSlider extends React.Component {
     state = {
@@ -29,7 +29,8 @@ export default class PricingSlider extends React.Component {
                                         ...props.style,
                                         height: "36px",
                                         display: "flex",
-                                        width: "100%"
+                                        width: "100%",
+
                                     }}
                                 >
                                     <div
@@ -40,7 +41,7 @@ export default class PricingSlider extends React.Component {
                                             borderRadius: "4px",
                                             background: getTrackBackground({
                                                 values: this.state.values,
-                                                colors: ["#ec008c", "#2C2F34"],
+                                                colors: ["#ec008c", "#010101"],
                                                 min: MIN,
                                                 max: MAX
                                             }),
@@ -56,8 +57,9 @@ export default class PricingSlider extends React.Component {
                                     {...props}
                                     style={{
                                         ...props.style,
-                                        height: "30px",
-                                        width: "30px",
+                                        height: "20px",
+                                        width: "20px",
+
                                         borderRadius: "50px",
                                         backgroundColor: "#FFF",
                                         display: "flex",
@@ -73,7 +75,7 @@ export default class PricingSlider extends React.Component {
                     </div>
                     <div className="column">
                         <output style={{ marginTop: "30px" }} id="output">
-                            R  {this.state.values[0].toFixed(1)} <small>estimated*</small>
+                            R  {this.state.values[0].toFixed(2)} <small>estimated*</small>
                         </output>
                     </div>
                 </div>
