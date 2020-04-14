@@ -9,8 +9,9 @@ export const HeaderContainer = styled.div`
   min-width: 100%;
   display: flex;
   height: fit-content;
-  z-index:20;
+  z-index: 20;
   align-items: center;
+  background: #000;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     padding: 0.8rem 1rem 0.8rem 3rem;
@@ -26,14 +27,14 @@ export const MenuTab = styled.div`
   }
   .info-toggle {
     z-index: 502;
-    /* background-color: #000000; */
-    /* border: 1px solid ${Colors.whiteLight}; */
+
     font-family: 'metropolis-medium', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     color: white;
     height: 42px;
+    top: 15px;
     width: 42px;
     line-height: 42px;
     position: absolute;
@@ -53,7 +54,7 @@ export const MenuTab = styled.div`
     margin-top: -1px;
     position: absolute;
     left: 0.65rem;
-    top: 50%;
+    top: 0;
     right: auto;
     bottom: auto;
     background-color: #ec008c;
@@ -117,17 +118,17 @@ export const Brand = styled(Link)`
   color: ${Colors.white};
   position: relative;
   right: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.6rem;
   background-image: url(${img});
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
-  height: 70px;
+  height: 50px;
   display: block;
-  z-index:10;
-  top: 1.5rem;
+  z-index: 10;
+  top: 0rem;
   @media screen and (min-width: 768px) {
     right: 3rem;
-    top: 2em;
+    top: 0em;
   }
 `;

@@ -6,22 +6,26 @@ export const ContactContainer = styled.div`
   background-color: ${Colors.black};
 
   color: white;
-  min-height: 100vh;
+  min-height: fit-content;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
- 
-  flex-wrap: wrap;
+  overflow-y: scroll;
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   &.page-enter {
     animation: ${slideInLeft} 1s forwards;
   }
   &.page-exit {
     animation: ${slideOutLeft} 1s forwards;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 4rem;
+    min-height: auto;
+    text-align: center;
   }
 `;
 
@@ -49,5 +53,4 @@ export const ContactRightContainer = styled.div`
   flex-wrap: wrap;
   z-index: 1;
   padding-bottom: 3rem;
-  
-  `
+`;
