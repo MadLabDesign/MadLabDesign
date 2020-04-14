@@ -6,7 +6,7 @@ import Menu from './pages/menu/Menu';
 import Header from './components/header/Header';
 import Loader from './components/loader/Loader';
 
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import * as serviceWorker from './serviceWorker';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';

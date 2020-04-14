@@ -1,10 +1,10 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const CardContainer = styled.div`
   max-height: 150px;
 `;
-export interface ICardProps {}
+export interface ICardProps { }
 
 export default class ProfileCard extends React.Component<ICardProps, any> {
   public render() {

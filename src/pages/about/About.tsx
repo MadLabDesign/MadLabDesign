@@ -6,7 +6,7 @@ import {
   ProfileImage,
 } from './About.style';
 import { SubTitle } from '../../lib/theme/Global.styles';
-import { Button } from '../../components/buttons/Button';
+import { Buttons } from '../../components/buttons/Button';
 
 
 
@@ -77,7 +77,7 @@ const About: FunctionComponent<IAboutProps> = (props) => {
                 quietly and hope for the best, learning and finding out where
                 you can improve yourself, helps you and the company grow
                 </p>
-              <Button className="ripple">Resumé</Button>
+              <Buttons className="ripple">Resumé</Buttons>
             </div>
           </div>
 

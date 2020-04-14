@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { Colors } from '../../lib/theme/Colors';
 
 export const WorkContainer = styled.div`

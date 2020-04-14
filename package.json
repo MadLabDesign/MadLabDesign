@@ -37,6 +37,7 @@
     "react-dom": "^16.8.6",
     "react-loading-screen": "^0.0.17",
     "react-measure": "^2.3.0",
+    "react-range": "^1.5.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-spring": "^8.0.25",
