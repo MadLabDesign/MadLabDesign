@@ -27,7 +27,7 @@
     "gh-pages": "^2.2.0",
     "history": "^4.10.1",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lorem-ipsum": "^2.0.3",
     "mobx-react": "^6.0.2",
     "node-sass": "^4.12.0",
