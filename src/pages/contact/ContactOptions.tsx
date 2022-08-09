@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useState, useRef } from 'react'
 import styled from 'styled-components/macro';
 import { useOnResize } from 'utilities/useHooks';
-import { Colors } from 'lib/theme/Colors';
 import PropTypes from 'prop-types'
 import pillButtonGroup from 'components/buttons/PillButtonGroup';
 import CareerForm from './forms/CareerForm';
@@ -33,7 +32,7 @@ const ContactOptions: FunctionComponent<Props> = ({ onChangeTab }) => {
     const [offset, setOffset] = useState(0)
     const [isDragActive, setIsDragActive] = useState(false)
     const pillButtonGroupRef = useRef(null)
-    useOnResize(pillButtonGroupRef, (pillButtonGroup) => setOffset(pillButtonGroup.offsetWidth / 2))
+    useOnResize(pillButtonGroupRef, (pillButtonGroup: { offsetWidth: number; }) => setOffset(pillButtonGroup.offsetWidth / 2))
 
     return (
         <Container>
@@ -90,7 +89,7 @@ display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-  
+
 	overflow-x: hidden;
 	overflow-y: scroll;
 	-ms-overflow-style: none !important;
@@ -102,6 +101,6 @@ color: white;
 const PillButtonGroup = styled(pillButtonGroup) <PillButtonGroupProps>`
 	position: absolute;
 	top: 15px;
-	
+
 	opacity: ${({ visible }) => (visible ? 1 : 0)};
 `

@@ -12,9 +12,9 @@ function Animate() {
     const onMove = useCallback(
         ({ clientX: x, clientY: y }) =>
             set({ xy: [x - window.innerWidth / 2, y - window.innerHeight / 2] }),
-        [],
+        [set],
     );
-    const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), []);
+    const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [set]);
     return (
         <div className="animatedConatiner" onMouseMove={onMove} onScroll={onScroll}>
             <a.svg style={{ transform: interpBg }} viewBox="0 0 407 322">

@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
 import { Colors } from '../../lib/theme/Colors';
-
 import img from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 export const HeaderContainer = styled.div`
@@ -11,7 +10,7 @@ export const HeaderContainer = styled.div`
   height: fit-content;
   z-index: 20;
   align-items: center;
-  background: #000;
+  background: rgba(0,0,0,0.29);
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     padding: 0.8rem 1rem 0.8rem 3rem;
