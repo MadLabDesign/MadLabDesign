@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { HomePage, HomeLeftContainer, HomeRightContainer } from './Home.style';
-import Intro from '../Intro/Intro';
 import Social from '../../components/social/Social';
-import Scroller from '../../components/scroller/Scroller';
 import { SubTitle } from '../../lib/theme/Global.styles';
 import Animate from '../../components/animate/animate';
 
@@ -12,7 +10,7 @@ const Home: FunctionComponent<IHomeProps> = props => {
   return (
     <>
       <HomePage>
-        <Scroller />
+
         <HomeLeftContainer>
           <div>
             <SubTitle className={"animated slideInLeft delay-0.3s"}>
@@ -40,7 +38,7 @@ const Home: FunctionComponent<IHomeProps> = props => {
         <Social />
         <Animate />
       </HomePage>
-      <Intro />
+
     </>
   );
 };
