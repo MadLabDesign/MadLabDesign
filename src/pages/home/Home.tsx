@@ -38,7 +38,6 @@ const Home: FunctionComponent<IHomeProps> = props => {
         <Social />
         <Animate />
       </HomePage>
-
     </>
   );
 };
