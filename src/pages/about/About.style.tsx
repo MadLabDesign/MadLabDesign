@@ -62,8 +62,7 @@ export const AboutRight = styled.section`
     flex-wrap: wrap;
     align-items: center;
     min-height: auto;
-    margin-top: 100px;
-    height: 100%;
+    margin-top: 2rem;
     overflow: -moz-scrollbars-none !important;
     overflow-y: scroll;
     -ms-overflow-style: none !important;
