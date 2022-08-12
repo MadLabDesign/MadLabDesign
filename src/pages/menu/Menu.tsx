@@ -28,16 +28,6 @@ const Menu: FunctionComponent<IMenuProps> = (props) => {
             </Link>
           </li>
           <li>
-            <Link to={'/work'} className="effect-underline">
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link to={'/freebies'} className="effect-underline">
-              Freebies
-            </Link>
-          </li>
-          <li>
             <Link to={'/contact'} className="effect-underline">
               Contact
             </Link>
