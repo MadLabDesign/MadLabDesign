@@ -16,7 +16,7 @@ export default class Social extends React.Component<ISocialProps, any> {
           </li>
           <li>
             <a
-              href="linkedin.com/in/blaine-lingard-55247436"
+              href="https://www.linkedin.com/in/blaine-lingard-55247436/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ export default class Social extends React.Component<ISocialProps, any> {
           </li>
           <li>
             <a
-              href="/"
+              href="https://github.com/MadLabDesign"
               title="Github"
               target="_blank"
               rel="noopener noreferrer"
