@@ -10,7 +10,7 @@ import { Buttons } from '../../components/buttons/Button';
 
 interface IAboutProps {}
 
-const About: FC<IAboutProps> = (props)=> {
+const About: FC<IAboutProps> = props => {
   return (
     <AboutContainer>
       <AboutLeft className="animated slideInLeft delay-0.3s">
@@ -68,7 +68,7 @@ const About: FC<IAboutProps> = (props)=> {
                 project.
               </p>
             </div>
-            <div className="column ">
+            <div className="column">
               <p>
                 If you don't know something… ASK or Research, never sit quietly
                 and hope for the best, learning and finding out where you can
@@ -78,6 +78,7 @@ const About: FC<IAboutProps> = (props)=> {
                 href="https://madlab.design/articles/Blaine_Lingard_CV_2022.pdf"
                 target="_blank"
                 title="resume"
+                rel="noreferrer"
               >
                 <Buttons className="ripple">click to view my Resumé</Buttons>
               </a>

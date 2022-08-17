@@ -46,7 +46,7 @@ const ContactOptions: FunctionComponent<Props> = ({ onChangeTab }) => {
                         onChangeTab && onChangeTab(index)
                     }}
                     offset={offset}
-                    visible={!isDragActive}
+                    visible={!isDragActive && !setIsDragActive}
                 />
             </HeaderContainer>
             <Wrapper>
