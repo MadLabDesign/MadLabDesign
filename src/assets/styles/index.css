@@ -104,7 +104,7 @@ html {
 }
 body {
   margin: 0;
-  // cursor: url(../images/touch.svg) 32 32, auto;
+   /*cursor: url(../images/touch.svg) 32 32, auto;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-size: cover;
@@ -216,29 +216,31 @@ a {
   text-decoration: none;
   color: white;
   transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 0.4);
-  &:hover {
-    color: #ec008c;
-  }
-}
 
+}
+a:hover {
+  color: #ec008c;
+}
 .background {
   display: none;
 
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    // background-image: url(../images/1.jpg);
-    // background-position: center;
-    // background-size: contain;
-    z-index: 0;
-    background-repeat: no-repeat;
-  }
 }
 
+@media screen and (min-width: 768px) {
+  .background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*// background-image: url(../images/1.jpg);
+  // background-position: center;
+  // background-size: contain;*/
+  z-index: 0;
+  background-repeat: no-repeat;
+  }
+}
 .cell {
   position: relative;
   background-size: cover;
@@ -400,24 +402,24 @@ a {
   position: fixed;
   width: 100%;
   height: 100%;
-  overflow: scroll;
   text-align: justify;
   z-index: 0;
   font-size: 20em;
   line-height: 0.9em;
   font-weight: 800;
-  svg {
-    pointer-events: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 70vw;
-    max-width: 800px;
-    transform-origin: 0% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 10em;
-  }
+
+}
+.animatedConatiner > svg {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 800px;
+  transform-origin: 0% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 10em;
 }

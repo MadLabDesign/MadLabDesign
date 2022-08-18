@@ -48,7 +48,7 @@ export const useOnResize = (
   };
   useEffect(() => {
     update();
-  });
+  },[update]);
 
   useLayoutEffect(() => {
     window.addEventListener('resize', update);
@@ -89,6 +89,3 @@ export const useLimit = (initialState: any, maxChars: number) => {
   const remaining = maxChars - (text ? text.length : 0);
   return [text, setText, remaining];
 };
-function useCallback(arg0: (watchRef: { current: any; }, _update: (arg0: any) => void) => void) {
-  throw new Error('Function not implemented.');
-}

@@ -23,7 +23,7 @@ const CareerForm: FunctionComponent<Props> = prop => {
             number: 'is not a validate number!',
         },
         number: {
-            range: ' must be between ${min} and ${max}',
+            range: 'must be between ${min} and ${max}',
         },
     };
     const onFinish = (values: any) => {

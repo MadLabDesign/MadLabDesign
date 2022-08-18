@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 export const HeaderContainer = styled.div`
   padding: 0.8rem;
   position: fixed;
-  min-width: 100%;
+  width: 100vw;
   display: flex;
   height: fit-content;
   z-index: 20;
   align-items: center;
-  background: rgba(0,0,0,0.29);
+  background:transparent;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     padding: 0.8rem 1rem 0.8rem 3rem;
@@ -116,18 +116,18 @@ export const MenuTab = styled.div`
 export const Brand = styled(Link)`
   color: ${Colors.white};
   position: relative;
-  right: 1rem;
+  margin: 1rem;
   margin-top: 0.6rem;
   background-image: url(${img});
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
   height: 50px;
-  display: block;
+  display: inline-block;
   z-index: 10;
   top: 0rem;
   @media screen and (min-width: 768px) {
-    right: 3rem;
+
     top: 0em;
   }
 `;

@@ -2,6 +2,7 @@ import path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
+const newLocal = [path.resolve('./static/index.html')];
 export default {
   output: {
     path: path.resolve('dist'),
@@ -34,7 +35,7 @@ export default {
   },
 
   plugins: [
-    new CopyWebpackPlugin([path.resolve('./static/index.html')]),
+    new CopyWebpackPlugin(),
     // new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: './static/index.html',
