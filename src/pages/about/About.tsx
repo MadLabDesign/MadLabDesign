@@ -80,7 +80,7 @@ const About: FC<IAboutProps> = props => {
                 title="resume"
                 rel="noreferrer"
               >
-                <Buttons className="ripple">click to view my Resumé</Buttons>
+                <Buttons className="ripple">view my Resumé</Buttons>
               </a>
             </div>
           </div>
