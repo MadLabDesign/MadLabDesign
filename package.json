@@ -48,7 +48,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b develop -d build",
     "start": "react-scripts start",
     "build": "react-scripts build --verbose",
     "build:staging": "env-cmd -f .env.staging npm run build",
@@ -90,5 +90,5 @@
   "bugs": {
     "url": "https://github.com/MadLabDesign/MadLabDesign/issues"
   },
-  "homepage": "https://overloadpixel.com/"
+  "homepage": "/"
 }
