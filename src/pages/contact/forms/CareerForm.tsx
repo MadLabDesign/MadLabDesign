@@ -5,12 +5,13 @@ import { InputField, InputTextField } from 'components/Forms/Inputs';
 import { Buttons } from 'components/buttons/Button';
 import PricingSlider from 'components/Forms/PricingSlider';
 import { Colors } from 'lib/theme/Colors';
+import { max, min } from 'lodash';
 
 
 
 interface Props { }
 
-const CareerForm: FunctionComponent<Props> = prop => {
+const CareerForm: FunctionComponent<Props> = () => {
     const layout = {
         labelCol: { span: 8 },
         wrapperCol: { span: 16 },
@@ -23,7 +24,7 @@ const CareerForm: FunctionComponent<Props> = prop => {
             number: 'is not a validate number!',
         },
         number: {
-            range: 'must be between ${min} and ${max}',
+            range: `'must be between ${min} and ${max}`,
         },
     };
     const onFinish = (values: any) => {
@@ -59,7 +60,7 @@ const CareerForm: FunctionComponent<Props> = prop => {
 
             <div className="columns is-desktop">
                 <div className="column">
-                    <Form.Item name={['user', 'email']} rules={[{ type: 'email' }]}>
+                    <Form.Item name={['user', 'email']} rules={[{ type: 'email', required: true }]}>
                         <InputField placeholder="EMAIL" />
                     </Form.Item>
                 </div>
