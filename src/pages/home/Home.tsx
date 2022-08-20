@@ -8,7 +8,6 @@ interface IHomeProps { }
 
 const Home: FunctionComponent<IHomeProps> = props => {
   return (
-    <>
       <HomePage>
 
         <HomeLeftContainer>
@@ -34,11 +33,9 @@ const Home: FunctionComponent<IHomeProps> = props => {
             </p>
           </div>
         </HomeRightContainer>
-
         <Social />
         <Animate />
       </HomePage>
-    </>
   );
 };
 
