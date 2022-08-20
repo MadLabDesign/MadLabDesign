@@ -9,7 +9,7 @@ export default class Social extends React.Component<ISocialProps, any> {
       <SocialList>
         <ul className="home-social">
           <li>
-            <a href="mailto:hello@madlab.design" title="email me">
+            <a href="mailto:hello@madlab.design" title="email me" >
               <i className="far fa-envelope" aria-hidden="true" />
               <span>Contact</span>
             </a>
@@ -38,7 +38,7 @@ export default class Social extends React.Component<ISocialProps, any> {
           </li>
           <li>
             <a
-              href="https://github.com/MadLabDesign"
+              href="https://github.com/MadLabDesign/"
               title="Github"
               target="_blank"
               rel="noopener noreferrer"
